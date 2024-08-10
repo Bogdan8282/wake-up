@@ -21,26 +21,36 @@ const Header = () => {
 
   return (
     <header className={`header ${isScrolled ? "scrolled" : ""}`}>
-      <div className="header__logo">
+      <a href="" className="header__logo">
         <img src={Logo} alt="logo" className="logo__icon" />
         <h3 className="logo__text">Wake Up</h3>
-      </div>
+      </a>
       <div className="header__nav">
         <ul className="header__list">
           <li className="header__item">
-            <a href="" className="header__link">Main</a>
+            <a href="" className="header__link">
+              Main
+            </a>
           </li>
           <li className="header__item">
-            <a href="" className="header__link">About Us</a>
+            <a href="" className="header__link">
+              About Us
+            </a>
           </li>
           <li className="header__item">
-            <a href="" className="header__link">Gallery</a>
+            <a href="" className="header__link">
+              Gallery
+            </a>
           </li>
           <li className="header__item">
-            <a href="" className="header__link">Location</a>
+            <a href="" className="header__link">
+              Location
+            </a>
           </li>
           <li className="header__item">
-            <a href="" className="header__link">Menu</a>
+            <a href="" className="header__link">
+              Menu
+            </a>
           </li>
         </ul>
       </div>
