@@ -155,11 +155,6 @@ body {
   font-weight: 400;
 }
 
-.wrapper {
-  max-width: 1680px;
-  margin: 0 auto;
-}
-
 a {
   color: inherit;
   text-decoration: none;
@@ -172,8 +167,38 @@ a:focus {
 
 h1 {
   font-size: 46px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 38px;
+  font-weight: 600;
 }
 
 h3 {
   font-size: 20px;
+}
+
+.wrapper {
+  max-width: 1680px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.wrapper-full {
+  width: 100%;
+}
+
+.button {
+  font-size: 20px;
+  font-weight: 500;
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 12px 20px;
+  transition: 0.2s all linear;
+}
+
+.button:hover {
+  color: var(--secondary-color);
+  background-color: black;
 }
