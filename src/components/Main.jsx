@@ -1,13 +1,16 @@
 import React, { useState } from "react";
 import cafeInside from "../assets/cafe-inside.jpg";
 import aboutUs from "../assets/about.jpeg";
-import galleryImage1 from "../assets/coffe-and-doughnuts.jpg";
+import galleryImage1 from "../assets/doughnuts.jpg";
 import galleryImage2 from "../assets/cafe-interior.jpg";
 import galleryImage3 from "../assets/coffe-in-office.jpg";
 import galleryImage4 from "../assets/cafe-girl.jpg";
 import galleryImage5 from "../assets/two-cups.jpg";
 import galleryImage6 from "../assets/coffee-cup.jpg";
 import Modal from "./Modal";
+import servicesImage1 from "../assets/coffee-powder.jpeg";
+import servicesImage2 from "../assets/bakery.jpeg";
+import servicesImage3 from "../assets/coffe-and-book.jpg";
 
 const Main = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -115,12 +118,39 @@ const Main = () => {
 
       <section className="services">
         <div className="services__wrap">
-          <div className="services__title">Our services</div>
+          <h2 className="services__title">Our services</h2>
           <div className="services__list">
             <div className="services__item">
-              <img className="services__image" src="" alt="" />
-              <p className="services__description"></p>
+              <img className="services__image" src={servicesImage1} alt="" />
+              <p className="services__description">
+                Enjoy a hot cup of our freshly brewed coffee, made from
+                high-quality beans.
+              </p>
             </div>
+            <div className="services__item">
+              <img className="services__image" src={servicesImage2} alt="" />
+              <p className="services__description">
+                Try our delicious home-made pastries, baked daily to ensure
+                freshness and flavor.
+              </p>
+            </div>
+            <div className="services__item">
+              <img className="services__image" src={servicesImage3} alt="" />
+              <p className="services__description">
+                Relax in our comfortable seating area, perfect for meeting
+                friends or enjoying a book.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="location">
+        <div className="location__wrap">
+          <img className="location__image"></img>
+          <div className="location__text">
+            <div className="location__country"></div>
+            <div className="location__address"></div>
           </div>
         </div>
       </section>
