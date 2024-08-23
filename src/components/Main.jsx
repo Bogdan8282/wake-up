@@ -11,6 +11,7 @@ import Modal from "./Modal";
 import servicesImage1 from "../assets/coffee-powder.jpeg";
 import servicesImage2 from "../assets/bakery.jpeg";
 import servicesImage3 from "../assets/coffe-and-book.jpg";
+import locationMap from "../assets/location.jpg";
 
 const Main = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -83,23 +84,25 @@ const Main = () => {
       </section>
 
       <section className="gallery">
-        <div className="gallery__wrap">
-          {[
-            galleryImage1,
-            galleryImage2,
-            galleryImage3,
-            galleryImage4,
-            galleryImage5,
-            galleryImage6,
-          ].map((imgSrc, index) => (
-            <div
-              key={index}
-              className="gallery__image"
-              onClick={() => openModal(imgSrc)}
-            >
-              <img src={imgSrc} alt="" className="gallery__image-pic" />
-            </div>
-          ))}
+        <div className="wrapper">
+          <div className="gallery__wrap">
+            {[
+              galleryImage1,
+              galleryImage2,
+              galleryImage3,
+              galleryImage4,
+              galleryImage5,
+              galleryImage6,
+            ].map((imgSrc, index) => (
+              <div
+                key={index}
+                className="gallery__image"
+                onClick={() => openModal(imgSrc)}
+              >
+                <img src={imgSrc} alt="" className="gallery__image-pic" />
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -117,40 +120,53 @@ const Main = () => {
       </section>
 
       <section className="services">
-        <div className="services__wrap">
-          <h2 className="services__title">Our services</h2>
-          <div className="services__list">
-            <div className="services__item">
-              <img className="services__image" src={servicesImage1} alt="" />
-              <p className="services__description">
-                Enjoy a hot cup of our freshly brewed coffee, made from
-                high-quality beans.
-              </p>
-            </div>
-            <div className="services__item">
-              <img className="services__image" src={servicesImage2} alt="" />
-              <p className="services__description">
-                Try our delicious home-made pastries, baked daily to ensure
-                freshness and flavor.
-              </p>
-            </div>
-            <div className="services__item">
-              <img className="services__image" src={servicesImage3} alt="" />
-              <p className="services__description">
-                Relax in our comfortable seating area, perfect for meeting
-                friends or enjoying a book.
-              </p>
+        <div className="wrapper">
+          <div className="services__wrap">
+            <h2 className="services__title">Our services</h2>
+            <div className="services__list">
+              <div className="services__item">
+                <img className="services__image" src={servicesImage1} alt="" />
+                <p className="services__description">
+                  Enjoy a hot cup of our freshly brewed coffee, made from
+                  high-quality beans.
+                </p>
+              </div>
+              <div className="services__item">
+                <img className="services__image" src={servicesImage2} alt="" />
+                <p className="services__description">
+                  Try our delicious home-made pastries, baked daily to ensure
+                  freshness and flavor.
+                </p>
+              </div>
+              <div className="services__item">
+                <img className="services__image" src={servicesImage3} alt="" />
+                <p className="services__description">
+                  Relax in our comfortable seating area, perfect for meeting
+                  friends or enjoying a book.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       <section className="location">
-        <div className="location__wrap">
-          <img className="location__image"></img>
-          <div className="location__text">
-            <div className="location__country"></div>
-            <div className="location__address"></div>
+        <div className="wrapper">
+          <div className="location__wrap">
+            <div className="location__text">
+              <h2 className="location__title">Location</h2>
+              <div className="location__country">Ukraine</div>
+              <div className="location__address">
+                173 Perekopska street, Kherson, Kherson region
+              </div>
+            </div>
+            <a href="" className="location__image">
+              <img
+                className="location__image-pic"
+                src={locationMap}
+                alt="map"
+              />
+            </a>
           </div>
         </div>
       </section>
