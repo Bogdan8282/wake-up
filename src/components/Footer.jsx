@@ -4,6 +4,7 @@ import mediaImage1 from "../assets/icons/media-google.svg";
 import mediaImage2 from "../assets/icons/media-instagram.svg";
 import mediaImage3 from "../assets/icons/media-messenger.svg";
 import mediaImage4 from "../assets/icons/media-whatsapp.svg";
+import "./Footer.css";
 
 const Footer = () => {
   return (

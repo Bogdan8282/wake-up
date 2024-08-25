@@ -1,0 +1,42 @@
+.header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 18px 32px;
+  transition: background-color 0.2s ease;
+  z-index: 1000;
+}
+
+.header.scrolled {
+  background-color: var(--pale-yellow);
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header__list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header__link {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.header__link:hover {
+  opacity: 0.8;
+}
+
+.logo__text {
+  font-weight: 600;
+  margin-top: 2px;
+}

@@ -1,0 +1,35 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 32px;
+  width: 100%;
+  color: #fff;
+  background-color: var(--ruby-red);
+}
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer__media {
+  display: flex;
+  gap: 20px;
+}
+
+.footer__link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.footer__link:hover {
+  opacity: 0.8;
+}
+
+.logo__text {
+  font-weight: 600;
+  margin-top: 2px;
+}
